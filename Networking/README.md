@@ -2,7 +2,7 @@
 
 Link : https://www.youtube.com/watch?v=5WfiTHiU4x8&t=983s
 
-**IP addresses**
+IP addresses
 
 ![image](https://github.com/AndyFooGuoZhen/DevNotes/assets/77149531/c19f2179-8145-4bde-8f9f-ba12ca19c902)
 
@@ -14,70 +14,70 @@ Link : https://www.youtube.com/watch?v=5WfiTHiU4x8&t=983s
 - Default gateway refers to the router
 - When devices want to communicate with devices outside of local network, they use the router
 
-**OSI model**
+OSI model
 
 7 layers - All people seem to need data processing
 
 ![image](https://github.com/AndyFooGuoZhen/DevNotes/assets/77149531/3d6ebe75-98bb-467a-9235-9486427bb71b)
 
-**Application layer**
+Application layer
 
-- **Google chrome, edge**
-- **USes HTTP , HTTPS protocol**
-- **FIle transfer (FTP) , email (SMTP) , web surfing (HTTPS)**
+- Google chrome, edge
+- USes HTTP , HTTPS protocol
+- FIle transfer (FTP) , email (SMTP) , web surfing (HTTPS)
 
-**Presentation layer**
+Presentation layer
 
-- **Communicates with application and session layer**
-- **Receives chars from application, perform translation to convert to bits, performs compression and encryption**
-- **Protocols used in encryption (SSL)**
+- Communicates with application and session layer
+- Receives chars from application, perform translation to convert to bits, performs compression and encryption
+- Protocols used in encryption (SSL)
 
-**Session layer**
+Session layer
 
-- **Setup and manage connections**
-- **Keeps track of files downloaded**
-- **APIs**
-- **When computer connects to server, authentication occurs**
-- **After authenticated, authorization is allowed by server**
+- Setup and manage connections
+- Keeps track of files downloaded
+- APIs
+- When computer connects to server, authentication occurs
+- After authenticated, authorization is allowed by server
 
-**Transport layer**
+Transport layer
 
-- **Performs segmentation**
-    - **Segments data from session layer , each segment contains port and seq number**
-- **Performs flow control**
-    - **Control how much data is transferred between device and server**
-    - **Device uses the TCP protocol to tells server what speed is adequate for communication**
-- **Error control**
-    - **If data packet is loss (known by performing a checksum), automatic repeat request will be performed**
-- **Services**
-    - **Connection oriented transmission (TCP)**
-        - **Feedback needed**
+- Performs segmentation
+    - Segments data from session layer , each segment contains port and seq number
+- Performs flow control
+    - Control how much data is transferred between device and server
+    - Device uses the TCP protocol to tells server what speed is adequate for communication
+- Error control
+    - If data packet is loss (known by performing a checksum), automatic repeat request will be performed
+- Services
+    - Connection oriented transmission (TCP)
+        - Feedback needed
         - 
-    - **Connectionless (UDP)**
-        - **Faster, no feedback**
-        - **Streaming, games**
+    - Connectionless (UDP)
+        - Faster, no feedback
+        - Streaming, games
     
 
-**Network layer**
+Network layer
 
-- **Receives/send segments to and from transport layer**
-- **Routing**
-    - **Moving a packet from source to destination**
-- **Logical addressing**
-    - **IP addressing, Combines IP of sender and receiver to a segment to form a data packet**
-- **Path determination**
-    - **Choosing the best , shortest path to send**
+- Receives/send segments to and from transport layer
+- Routing
+    - Moving a packet from source to destination
+- Logical addressing
+    - IP addressing, Combines IP of sender and receiver to a segment to form a data packet
+- Path determination
+    - Choosing the best , shortest path to send
 
-**Data link layer**
+Data link layer
 
-- **Physical addressing**
-    - **Combines mac address of receiver and sender to a data packet to form a frame**
+- Physical addressing
+    - Combines mac address of receiver and sender to a data packet to form a frame
 
-**Physical layer**
+Physical layer
 
-- **Network cards, ethernet cables**
+- Network cards, ethernet cables
 
-**Port forwarding**
+Port forwarding
 
 https://www.youtube.com/watch?v=2G1ueMDgwxw
 
@@ -89,24 +89,24 @@ https://www.youtube.com/watch?v=2G1ueMDgwxw
 
 ## Communication protocols
 
-**API** 
+API 
 
 - Request response cycle (Two way communication)
 - System A sends data to B , and B returns a response
 - Stateless, can be scaled easy, request can be handles by other servers
 
-**WebHooks**
+WebHooks
 
 - One way
 - Sends data from One application to another when triggered by an event
 - EX: Update deployment code base from gitlab to openshift
 
-**Polling**
+Polling
 
 - Client keeps making request to server
 - Lots of new connections created but lots of empty responses
 
-**Websockets**
+Websockets
 
 https://www.youtube.com/watch?v=xTR5OflgwgU
 
