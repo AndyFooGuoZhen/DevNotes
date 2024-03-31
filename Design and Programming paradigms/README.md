@@ -46,3 +46,20 @@ https://www.youtube.com/watch?v=_jDNAf3CzeY
     - If we add new payment paymne tmethod (processor), we can just inject it into the service
 
 ![image](https://github.com/AndyFooGuoZhen/DevNotes/assets/77149531/2d5bf537-2b8b-4051-a486-17458c5f2934)
+
+---
+
+# Pure functions
+- Functions that behave deterministicly, always returns expected output. (Same input same output)
+- Doesn't affect state of external variables, does not change original value
+- Easy to test
+- Example of non pure function:
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/DevNotes/assets/77149531/37f618c2-f6d8-497e-b656-a1d1dd21c3c0">
+- Second example of non pure function ( the array is not copied here, we are modifying the original array):
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/DevNotes/assets/77149531/f75cc8ac-1bbd-455b-80d1-b5dbf2c75d3c">
+- Pure function (We use the spread operator to create a copy):
+- <img width="400" alt="image" src="https://github.com/AndyFooGuoZhen/DevNotes/assets/77149531/d1e2c3b9-2d14-43f2-8dd8-600fe1ee2f92">
+
+
+
+
