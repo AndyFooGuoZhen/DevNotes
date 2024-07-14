@@ -27,6 +27,15 @@
 - Resource-based policy focuses on controlling and managing access to specific resources, such as files, databases, or applications.
 - Identity-based policy focuses on managing and controlling access based on the user's identity and associated attributes.
 - <img width="1018" alt="image" src="https://github.com/user-attachments/assets/1603eeef-aa19-4a8d-99df-759cf4d31f33">
-- (Left), shows a resource based policy that ties to the IAM user of iamuser 1, restricting access to only the specified s3 bucket
+- (Left), shows a resource based policy that ties to the IAM user of iamuser 1, restricting access to the specified s3 bucket
 - (right), identity based policy attached to SmallerUser on the actions it can perform on s3 buckets it has access to
+
+### Example usage of a resource based policy
+- Goal: we want to restrict SmallerAndy to have access to other s3 buckets, except for the one specified in the resource based policy
+- We head to the admin account, head to the s3 bucket we want to restrict access for SmallerAndy, head to permissions for buckets and paste our resource based json there and hit save
+- <img width="432" alt="image" src="https://github.com/user-attachments/assets/ada9ad8f-5cd1-4070-8d76-4538cdbfe67a">
+- On SmallerAndy's account, we have no access to the bucket specified in the Resource policy
+- <img width="964" alt="image" src="https://github.com/user-attachments/assets/f6878ebd-6e17-49d8-83bc-d180f7f56991">
+
+
 
