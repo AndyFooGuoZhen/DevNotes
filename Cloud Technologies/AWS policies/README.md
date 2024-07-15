@@ -37,5 +37,22 @@
 - On SmallerAndy's account, we have no access to the bucket specified in the Resource policy
 - <img width="964" alt="image" src="https://github.com/user-attachments/assets/f6878ebd-6e17-49d8-83bc-d180f7f56991">
 
+### Roles
+- Access to resources is granted based on the user's role, rather than their individual identity
+- head to IAM, roles, give the role a name, a service use case (EX: EC2) and the sets of permissions tied to this role
+- More function centric than user groups
+
+### User groups
+- Collections of users that share common characteristics or requirements within an organization's access control system
+- Head to IAM, user groups, Create group, add users, and attach policies. If you want to be specific you can also add inline policies here (something like resource based policy)
+- EX: if you attach a read only access to s3 policy but you also want to allow users in this group to have write access to an s3 bucket called bucketA, you can add an inline policy for write access to bucket A
+
+### Principles of least privilege
+Resource: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html
+- Sometimes a user group policy may allow access to a particular resource but resource policy denies access for some users, how can we determine if the user has access to the resource?
+- AWS applies the principles of least privilege, ensuring that each element only has the permissions necessary to function correctly
+- Permissions and policy evaluation is evaluated with a hierachical order
+- <img width="745" alt="image" src="https://github.com/user-attachments/assets/21fe2c2d-6a0e-4839-b6e8-73a715ca4814">
+
 
 
