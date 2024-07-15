@@ -27,7 +27,7 @@ Resource: https://www.youtube.com/watch?v=ExjW3HCFG1U&t=792s
 ### Identity vs Resource based policy
 - Almost looks the same in structure
 - Resource-based policy focuses on controlling and managing access to specific resources, such as files, databases, or applications.
-- Identity-based policy focuses on managing and controlling access based on the user's identity and associated attributes.
+- Identity-based policy focuses on managing and controlling access based on the user's identity and associated attributes. 
 - <img width="1018" alt="image" src="https://github.com/user-attachments/assets/1603eeef-aa19-4a8d-99df-759cf4d31f33">
 - (Left), shows a resource based policy that ties to the IAM user of iamuser 1, restricting access to the specified s3 bucket
 - (right), identity based policy attached to SmallerUser on the actions it can perform on s3 buckets it has access to
@@ -55,6 +55,10 @@ Resource: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_ev
 - AWS applies the principles of least privilege, ensuring that each element only has the permissions necessary to function correctly
 - Permissions and policy evaluation is evaluated with a hierachical order
 - <img width="745" alt="image" src="https://github.com/user-attachments/assets/21fe2c2d-6a0e-4839-b6e8-73a715ca4814">
+
+### Usage of roles
+- Once a role is created, you can attach the role to a specific resource
+- EX: using an EC2 example, you can attach the role simply by heading to EC2 instance, Actions > security > modify IAM role and attach the role you have created
 
 
 
