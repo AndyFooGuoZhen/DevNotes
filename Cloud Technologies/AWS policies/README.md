@@ -1,3 +1,5 @@
+Resource: https://www.youtube.com/watch?v=ExjW3HCFG1U&t=792s
+
 ### IAM
 - Identitiy Access Management
 
